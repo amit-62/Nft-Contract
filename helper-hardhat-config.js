@@ -4,17 +4,16 @@ const networkConfig = {
     4: {
         name: "rinkeby",
         vrfCoordinatorV2: "0x6168499c0cFfCaCD319c818142124B7A15E857ab", 
-        entranceFee: ethers.utils.parseEther("0.001"),
         gasLane: "0xd89b2bf150e3b9e13446986e571fb9cab24b13cea0a43ea20a6049a85cc807cc",
         subscriptionId: "22294",
         callbackGasLimit: "500000",
-        interval: "30",
+        mintFee: "10000000000000000", // 0.01 ETH
     },
     5: {
         name: "goerli",
         subscriptionId: "1727",
         gasLane: "0x79d3d8832d904592c0bf9818b621522c988bb8b0c05cdc3b15aea1b6e8db0c15", // 30 gwei
-        interval: "30",
+        mintFee: "10000000000000000", // 0.01 ETH
         entranceFee: ethers.utils.parseEther("0.001"),
         callbackGasLimit: "500000", // 500,000 gas
         vrfCoordinatorV2: "0x2Ca8E0C643bDe4C2E08ab1fA0da3401AdAD7734D",
@@ -24,7 +23,7 @@ const networkConfig = {
         entranceFee: ethers.utils.parseEther("0.001"),
         gasLane: "0xd89b2bf150e3b9e13446986e571fb9cab24b13cea0a43ea20a6049a85cc807cc",
         callbackGasLimit: "500000",
-        interval: "30",
+        mintFee: "10000000000000000", // 0.01 ETH
     }
 }
 
